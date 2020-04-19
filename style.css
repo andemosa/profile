@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Style body */
+main{
+    background-color: rgb(67, 67, 124);
+    border: 2px solid rgb(67, 67, 124);
+    height: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    height: 80%;
+}
+
+#left{
+    background:linear-gradient(to right, rgba(0,0,0,0) 85%, rgba(0, 0, 0, 0.692)), linear-gradient(to left, rgba(0,0,0,0) 85%, rgba(0, 0, 0, 0.692)), linear-gradient(to top, rgba(0,0,0,0) 85%, rgba(0, 0, 0, 0)), linear-gradient(to bottom, rgba(0,0,0,0) 85%, rgb(0, 0, 0)),  url(image.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+}
+
+#right{
+    background-color: aliceblue;
+    width: 60%;
+}
+
+#Contact, #Portfolio{
+    margin: 1rem auto 0 auto;
+}
+
+/* Style Profile Tab*/
+#pro_contents{
+    height: auto;
+    padding: 1rem;
+}
+
+#pro_contents div{
+    margin: 1rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    border-left: 2px solid rgb(67, 67, 124);
+}
+
+#pro_contents h1{
+    color:  rgb(67, 67, 124);
+    padding-bottom: 5px;
+}
+
+/* Style Portofolio Tab*/
+
+#Portfolio h2{
+    font-size: 2rem;
+    margin: 1.5rem;
+    color: rgb(67, 67, 124);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#content div{
+    width: 40%;
+    margin-left: 5%;
+}
+
+#content div img{
+    width: 100%;
+}
+
+#content div figcaption{
+    font-size: 1.25rem;
+}
+
+
+/* Style Contact Tab*/
+input{
+    border: 1px solid rgb(67, 67, 124);
+    font-size: 100%;
+    background-color: #edf2f7;
+    color: #1a202c;
+    padding: .5rem;
+    width: 90%;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 90%;
+    height: 200px;
+    font-family: Tahoma, sans-serif;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid rgb(67, 67, 124);
+    font-size: 100%;
+}
+
+
+form button{
+    background-color: rgb(67, 67, 124);
+    color: #fff;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    padding: .75rem 10rem;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 0 solid #e2e8f0;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+#Contact{
+    padding: 3rem;
+    background-color: rgb(250, 250, 250);
+}
+
+#Contact h2{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: rgb(67, 67, 124);
+}
+
+#Contact p{
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        height: 100%;
+    }
+
+    #left{
+        height: 300px;
+        width: 100%;
+    }
+    
+    #right{
+        height: 60%;
+        width: 100%;
+    }
+
+    #pro_contents div{
+        margin: 1rem;
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+
+    
+    #content div figcaption{
+        font-size: 1rem;
+    }
+
+    form button{
+        padding: .75rem 4rem;
+    }
+
+}
